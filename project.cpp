@@ -97,7 +97,8 @@ int main()
         bill += v[x];
     }
     cout << "Initial Bill : " << bill << endl;
-    cout << "VAT : " << bill * 0.45 << endl;
+    cout << "VAT : " << bill * 250 << endl;
+    cout << "Sorry for high VAT rate." << endl;
     cout << "Total Bill is : " << bill + bill*0.45<< endl;
 //    cout << "Thank you for your shopping Please come again.And be sure to give your precious vote to the Boat marka";
 }
