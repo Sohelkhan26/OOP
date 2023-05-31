@@ -1,2 +1,2 @@
 # OOP
-Banghabandhu Digital Store.
+KUET Digital Store.
