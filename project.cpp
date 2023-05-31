@@ -5,73 +5,60 @@ using namespace std;
 
 int main()
 {
-    string s;
-    cout << "Do you want to read a joke?(yes / no)" << endl;
-    cin >> s;
-    srand(time(0));
-    if(s == "yes")
-    {
-        switch((rand()%6) + 1)
-        {
-        case 1:
-            cout << "A guy dies and is sent to hell. Satan meets him, shows him doors to three rooms, and says he must choose one to spend eternity in. In the first room, people are standing in dirt up to their necks. The guy says, No, let me see the next room. In the second room, people are standing in dirt up to their noses. Guy says no again. Finally Satan opens the third room. People are standing with dirt up to their knees, drinking coffee and eating pastries. The guy says, I pick this room. Satan says Ok and starts to leave, and the guy wades in and starts pouring some coffee. On the way out Satan yells, OK, coffee break’s over. Everyone back on your heads!" << endl;
-            break;
-        case 2:
-            cout << "A young boy enters a barber shop and the barber whispers to his customer. This is the dumbest kid in the world. Watch while I prove it you. The barber puts a dollar bill in one hand and two quarters in the other, then calls the boy over and asks, Which do you want, son? The boy takes the quarters and leaves. What did I tell you? said the barber. That kid never learns! Later, when the customer leaves, he sees the same young boy coming out of the ice cream store. Hey, son! May I ask you a question? Why did you take the quarters instead of the dollar bill? The boy licked his cone and replied, Because the day I take the dollar, the game is over!" << endl;
-            break;
-        case 3:
-            cout << "China has a population of a billion people. One billion. That means even if you’re a one in a million kind of guy, there are still a thousand others exactly like you." << endl;
-            break;
-        case 4:
-            cout << "Did you hear about a claustrophobic astronaut?" << endl;
-            cout << "He just needed a little space." << endl;
-            break;
-        case 5:
-            cout << "Doctor : How is your headache?" << endl;
-            cout << "Man    : She is fine." << endl;
-            break;
-        default:
-            cout << "Why don’9t scientists trust atoms?" << endl;
-            cout << "Because they make up everything." << endl;
-        }
-    }
     map <string, long long> price;
     price["Tiger M_s_d"] = 10000000000;
-    //price["The great Hurricane of Dr. M.M.A Hashem Sir"] = 90000;
     price["KUET"] = 100000000;
-    price["USS Louisiana"] = 999999;
-    price["BUET"] = 1000;
     price["TERM FINAL QUESTION"] = 10000;
-    price["Bangladesh"] = 99999999999999;
     price["Skywalker's Lightsaber"] = 100000;
     price["Batmobile"] = 389473;
     price["The Imperial State Crown"] = 10;
     price["Chotha(100% common)"] = 1000000;
     price["The Infinity Gauntlet"] = 1152921504606846976;
-    price["Infinity Stones(All in one)"] = 9048302;
-    price["Mjollnir(The hammer of Thor)"] = 49302;
     price["Iron man Suit(Red)"] = 1893448;
-    price["Catapault"] = 509433;
-    price["Bugatti La Voiture Noire"] = 89847849398393;
-    price["Pagani Huayra"] = 9398434333094;
-    price["Koenigsegg Gemera"] = 3934989489303;
-    price["Zenvo TSR-S"] = 934893033;
-    price["The chair of prime minister in BD"] = 00;
-    price["Kingsman Medal of Valour"] = 29484943;
+    price["Medal of Valour"] = 29484943;
     price["UFO"] = 8393432232;
     price["SR-71 Blackbird based SR-72"] = 283898433493;
-    price["Codeforce"] = 289338222;
-    price["Bill gates"] = 2232322;
-    price["USA"] = 29039223;
-    price["NASA"] = 903930933;
-    price["Elon Musk"] = 01;
+    price["Bugatti La Voiture Noire"] = 19000000;
+    price["Rolls-Royce Sweptail"] = 13000000;
+    price["Bugatti Centodieci"] = 9000000;
+    price["Pagani Zonda HP Barchetta"] = 7800000;
+    price["Lamborghini Veneno"] = 4500000;
+    price["Koenigsegg Jesko"] = 3200000;
+    price["Ferrari Pininfarina Sergio"] = 3000000;
+    price["Bugatti Chiron Super Sport 300+"] = 3000000;
+    price["Aston Martin Valkyrie"] = 2800000;
+    price["Mercedes-AMG One"] = 2750000;
+    price["Bugatti Divo"] = 5500000;
+    price["Pagani Huayra BC"] = 2900000;
+    price["Ferrari LaFerrari Aperta"] = 2500000;
+    price["Lamborghini Sian FKP 37"] = 3500000;
+    price["McLaren Speedtail"] = 2400000;
+    price["Rolls-Royce Phantom"] = 500000;
+    price["MacBook Pro"] = 1999;
+    price["Dell XPS 15"] = 1699;
+    price["HP Spectre x360"] = 1499;
+    price["Razer Blade 15"] = 1999;
+    price["Lenovo ThinkPad X1 Carbon"] = 1799;
+    price["Asus ROG Zephyrus S GX701"] = 2399;
+    price["MSI GS66 Stealth"] = 1999;
+    price["Acer Predator Triton 500"] = 1999;
+    price["Microsoft Surface Book 3"] = 2199;
+    price["Alienware Area-51m"] = 2999;
+    price["Hilsa Bhapa"] = 1000;
+    price["Biryani"] = 800;
+    price["Dhakai Kacchi Biriyani"] = 900;
+    price["Ilish Polao"] = 1200;
+    price["Mutton Rezala"] = 1000;
+    price["Shorshe Ilish"] = 900;
+    price["Morog Pulao"] = 1100;
+    price["Chittagong Rosh Golla"] = 800;
+    price["Prawn Malai Curry"] = 1200;
+    price["Pitha"] = 600;
     cout << setfill('*') << setw(193) << endl;
-
     int idx = 1;
-
     cout  << "Bangabandhu Digital Store" << endl;
     cout << endl;
-    cout << "Name of product" << "\t" << "Price" << endl;
+    cout << "Name of product" << setfill(' ') << setw(100 - 15)  << right << "Price" << endl;
     for(auto i : price)
     {
         cout << idx++ << ".";
@@ -85,20 +72,14 @@ int main()
     }
     cout << "Enter the index of the Items you want to buy : (ctrl + z to end)" << endl;
     unsigned long long bill = 0 , x ;
-    while(cin >> x)
+    string sti;
+    while(cin >> sti)
     {
-        if(x == 8)
-            cout << "If you buy codeforce you get Mike Mirzayanov for free.He is the owner of codeforce and very talented" << endl;
-        else if(x == 9) cout << "Yes you guessed it right you can buy the great Elon musk who doesn't ever give up.Though he is very rich but you can buy him at a low cost from our digital store" << endl;
-        else if(x == 22)cout << "You can destroy half of the universe with authentic Infinity gaunlet" << endl;
-        else if(x == 24)cout << "Item : Tiger M_s_d \nCan you guess the name?\n";
-        else if(x == 18)cout << "SR-71 Blackbird based SR-72 is the ultrasonic jet-plane used in Top-gun Maverick with Tom cruise's autograph\n";
-        else if(x == 10)cout << "Yes All the infinity stones at a fair price only at our shop. Thanos had to suffer miserably to get all the stones\n";
+        if(sti == "end")break;
+        x = stoi(sti);
         bill += v[x];
     }
     cout << "Initial Bill : " << bill << endl;
-    cout << "VAT : " << bill * 250 << endl;
-    cout << "Sorry for high VAT rate." << endl;
-    cout << "Total Bill is : " << bill + bill*0.45<< endl;
-//    cout << "Thank you for your shopping Please come again.And be sure to give your precious vote to the Boat marka";
+//    cout << "VAT : " << bill * 0.45 << endl;
+//    cout << "Total Bill is : " << bill + bill*0.45<< endl;
 }
